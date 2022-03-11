@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS Homework</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="container p-5">
+    <h1>Bài tập JavaScript</h1>
+    <p>Bài tập 1</p>
+    <div class="row">
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 1</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen1"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 2</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 3</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen3"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-success" onclick="baiTapMot()">Kết Quả</button>
+      <span id="ketQua" class="row--1"></span>
+    </div>
+    <p>Bài tập 2</p>
+    <p class="select--text">Bạn là ai?</p>
+
+    <div class="input-group">
+      <select class="custom-select" id="inputGroupSelect04">
+        <option value="B">Bố</option>
+        <option value="M">Mẹ</option>
+        <option value="A">Anh trai</option>
+        <option value="E">Em gái</option>
+      </select>
+      <div class="input-group-append">
+        <button
+          class="btn btn-success btn--bt2"
+          type="button"
+          onclick="baiTapHai()"
+        >
+          Đồng ý
+        </button>
+      </div>
+      <span id="dongY"></span>
+    </div>
+    <p>Bài tập 3</p>
+    <div class="row">
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 1</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen-1"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 2</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen-2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 3</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen-3"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-success" onclick="baiTapBa()">Kết Quả</button>
+      <span id="chapNhan" class="row--1"></span>
+    </div>
+    <p>Bài tập 4</p>
+    <div class="row">
+      <div class="form-group row--1">
+        <label for="">Cạnh góc vuông 1</label>
+        <input
+          type="number"
+          name=""
+          id="txt-canh1"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Cạnh góc vuông 2</label>
+        <input
+          type="number"
+          name=""
+          id="txt-canh2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Cạnh huyền </label>
+        <input
+          type="number"
+          name=""
+          id="txt-canh3"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-success" onclick="baiTapBon()">Kết Quả</button>
+      <span id="xacNhan" class="row--1"></span>
+    </div>
+    <p class="nang-cao">Bài tập nâng cao</p>
+    <p>Bài tập 1</p>
+    <div class="row">
+      <div class="form-group row--1">
+        <label for="">Ngày</label>
+        <input
+          min="1"
+          max="31"
+          type="number"
+          name=""
+          id="txt-ngay-hien-tai"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Tháng</label>
+        <input
+          min="1"
+          max="12"
+          type="number"
+          name=""
+          id="txt-thang-hien-tai"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Năm</label>
+        <input
+          type="number"
+          name=""
+          id="txt-nam-hien-tai"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-success" onclick="baiTapMotNangCao()">
+        Kết Quả
+      </button>
+      <span id="motNangCao" class="row--1"></span>
+    </div>
+    <p>Bài tập 2</p>
+    <div class="row">
+      <div class="form-group row--2">
+        <label for="">Tháng</label>
+        <input
+          type="number"
+          min="1"
+          max="12"
+          name=""
+          id="txt-thang-2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--2">
+        <label for="">Năm </label>
+        <input
+          type="number"
+          name=""
+          id="txt-nam-2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-success" onclick="baiTapHaiNangCao()">
+        Kết Quả
+      </button>
+      <span id="thangNam"></span>
+    </div>
+    <p>Bài tập 3</p>
+    <div class="row">
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 1</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen-nang-cao1"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 2</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen-nang-cao2"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div class="form-group row--1">
+        <label for="">Số nguyên thứ 3</label>
+        <input
+          type="number"
+          name=""
+          id="txt-so-nguyen-nang-cao3"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <button class="btn btn-success" onclick="baiTapBaNangCao()">
+        Kết Quả
+      </button>
+      <span id="baNangCao" class="row--1"></span>
+    </div>
+    <p>Bài tập 4</p>
+    <div class="row">
+      <div class="row--one row--main">
+        <span>Sinh viên 1</span>
+        <div class="form-group">
+          <label for="">X</label>
+          <input
+            type="number"
+            name=""
+            id="sinh-vien-1-X"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Y</label>
+          <input
+            type="number"
+            name=""
+            id="sinh-vien-1-Y"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+      </div>
+      <div class="row--two row--main">
+        <span>Sinh viên 2</span>
+
+        <div class="form-group">
+          <label for="">X</label>
+          <input
+            type="number"
+            name=""
+            id="sinh-vien-2-X"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Y</label>
+          <input
+            type="number"
+            name=""
+            id="sinh-vien-2-Y"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+      </div>
+      <div class="row--three row--main">
+        <span>Sinh viên 3</span>
+
+        <div class="form-group">
+          <label for="">X</label>
+          <input
+            type="number"
+            name=""
+            id="sinh-vien-3-X"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Y</label>
+          <input
+            type="number"
+            name=""
+            id="sinh-vien-3-Y"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+      </div>
+      <div class="row--four row--main">
+        <span>Trường học</span>
+
+        <div class="form-group">
+          <label for="">X</label>
+          <input
+            type="number"
+            name=""
+            id="truong-hoc-X"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Y</label>
+          <input
+            type="number"
+            name=""
+            id="truong-hoc-Y"
+            class="form-control"
+            placeholder=""
+            aria-describedby="helpId"
+          />
+        </div>
+      </div>
+      <button class="btn btn-success btn--bt4" onclick="baiTapBonNangCao()">
+        Kết Quả
+      </button>
+      <span id="bonNangCao" class="row--main"></span>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./baitap1.js"></script>
+    <script src="./baitap2.js"></script>
+    <script src="./baitap3.js"></script>
+    <script src="./baitap4.js"></script>
+    <script src="./baitapnangcao/baitap1.js"></script>
+    <script src="./baitapnangcao/baitap2.js"></script>
+    <script src="./baitapnangcao/baitap3.js"></script>
+    <script src="./baitapnangcao/baitap4.js"></script>
+  </body>
+</html>
